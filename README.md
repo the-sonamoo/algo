@@ -1,21 +1,21 @@
 # algo
-+Data structure
++ Data structure
  + Union-Find(only path compression)
  
-+Graph
++ Graph
  + dijkstra
  + mst_kruskal
  + topological sort
  
-+Math
++ Math
  + Eratosthenes
  + Euclidean
  + Fast extension
  
-+Tree
++ Tree
  + LCA
  + diameter of tree
 
-+Miscellaneous
++ Miscellaneous
  + Maximum subarray with segtree
  + LIS nlogn
