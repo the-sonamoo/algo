@@ -13,7 +13,7 @@
  + Fast extension
  
 +Tree
- +L CA
+ + LCA
  + diameter of tree
 
 +Miscellaneous
