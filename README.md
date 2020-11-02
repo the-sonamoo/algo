@@ -8,14 +8,14 @@
  + topological sort
  
 +Math
- +Eratosthenes
- +Euclidean
- +Fast extension
+ + Eratosthenes
+ + Euclidean
+ + Fast extension
  
 +Tree
- +LCA
- +diameter of tree
+ +L CA
+ + diameter of tree
 
 +Miscellaneous
- +Maximum subarray with segtree
- +LIS nlogn
+ + Maximum subarray with segtree
+ + LIS nlogn
