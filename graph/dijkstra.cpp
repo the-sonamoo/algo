@@ -1,18 +1,22 @@
-pq.push({0 , s});
-while(!pq.empty()) {
-  int curr = pq.top().second;
-  int cost = -pq.top().first;
-  pq.pop();
+void dijkstra(int s) {
+    pq.push({0 , s});
+    dist[s] = 0;
 
-  if (visited[curr] == 1) continue;
-  dist[curr] = cost;
-  visited[curr] = 1;
-  for (int i = 0; i < v[curr].size(); i++) {
-    int ncurr = v[curr][i].first;
-    int ncost = v[curr][i].second;
-    dist[ncurr] = min(dist[ncurr] , dist[curr]+ncost);
-    pq.push({-dist[ncurr] , ncurr}); 
-  }
+    while(!pq.empty()) {
+        int cost = -pq.top().first;
+        int here = pq.top().second;
+        pq.pop();
+
+        if (dist[here] < cost) continue;
+
+        for (auto next : graph[here]) {
+            int there = next.first;
+            int nCost = next.second+cost;
+
+            if (dist[there] > nCost) {
+                dist[there] = nCost;
+                pq.push({-nCost , there});
+            }
+        }
+    }
 }
-
-printf("%d" , dist[e]);
